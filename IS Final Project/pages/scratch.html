@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skiing Scratch Page</title>
+  <link rel="stylesheet" href="../styles/scratch.css">
+</head>
+<body>
+
+  <!-- HERO / TOP (on-page anchor target) -->
+  <header id="top" class="hero">
+    <div class="hero-inner">
+      <h1>Why I Love Skiing</h1>
+      <p class="hero-tagline">
+        Fresh snow, cold air, and that feeling when your turns finally click.
+        <br>
+        Feel free to scroll through the page, or click on any of these 4 items below to navigate directly to the corresponding section!
+      </p>
+
+      <!-- Navigation on this page -->
+      <nav class="hero-nav">
+        <a href="#why-ski">Why Ski?</a>
+        <a href="#gear">Gear List</a>
+        <a href="#video">Watch a Run</a>
+        <a href="#tableau">Snow Stats</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: WHY SKI -->
+    <section id="why-ski" class="content-section">
+      <h2>Why Skiing Is the Best Winter Hobby</h2>
+      <p>
+        Skiing is my favorite way to get outside in the winter. It mixes
+        exercise, challenge, and time with friends. Every run feels a little
+        different depending on the snow, the light, and how I am feeling.
+      </p>
+
+      <div class="content-row">
+        <div class="content-box">
+          <h3>Things I Love on the Mountain</h3>
+          <ol>
+            <li>
+              The feeling of carving turns
+              <ul>
+                <li>Linking smooth S-turns down a groomer</li>
+                <li>Hearing the quiet scratch of edges on snow</li>
+                <li>Leaning into the turn and trusting the skis</li>
+              </ul>
+            </li>
+            <li>
+              Being above the clouds
+              <ul>
+                <li>Riding the lift through fog into sunshine</li>
+                <li>Seeing whole valleys covered in white</li>
+              </ul>
+            </li>
+            <li>
+              Time with friends
+              <ul>
+                <li>Lap after lap on our favorite runs</li>
+                <li>Laughing after the occasional wipeout</li>
+                <li>Hot chocolate in the lodge at the end of the day</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+        <!-- IMAGE DIV (custom image, not from Bootstrap) -->
+        <div class="content-box image-box">
+          <img
+            src="https://i.redd.it/fvuuyp4za2r21.jpg"
+            alt="Skier making turns on a snowy mountain"
+          >
+          <p class="image-caption">
+            One of my dream days: blue sky, fresh snow, and empty runs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: GEAR -->
+    <section id="gear" class="content-section">
+      <h2>Basic Ski Gear Checklist</h2>
+      <p>
+        You do not need the most expensive equipment to have fun. You just need
+        gear that fits and keeps you warm and safe.
+      </p>
+
+      <div class="content-row">
+        <div class="content-box">
+          <h3>Essential Gear</h3>
+          <ul class="gear-list">
+            <li>Skis and bindings</li>
+            <li>Ski boots that actually fit</li>
+            <li>Helmet and goggles</li>
+            <li>Warm waterproof gloves</li>
+            <li>Ski jacket and pants</li>
+          </ul>
+        </div>
+
+        <div class="content-box">
+          <h3>Nice-to-Have Extras</h3>
+          <ul class="gear-list">
+            <li>Neck gaiter or balaclava</li>
+            <li>Hand warmers</li>
+            <li>Backpack for snacks and water</li>
+            <li>Action camera for your best runs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: YOUTUBE VIDEO -->
+    <section id="video" class="content-section">
+      <h2>Watch a Favorite Ski Run</h2>
+      <p>
+       Here is a video of one of my favorite ski runs. While this is not practical for most people, it is very cool to see just how much is possible on two skis!
+      </p>
+
+      <div class="video-wrapper">
+        <!-- YouTube embed -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/fbqHK8i-HdA?si=vL2kKkx-PekpKcW6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
+<!-- SECTION 4: TABLEAU GRAPH -->
+<section id="tableau" class="content-section">
+  <h2>Snowfall and Ski Season Data</h2>
+  <p>
+    This embedded Tableau visualization shows interactive data. You can
+    hover and click to view various data over many years at Alta Ski Resort in Utah.
+  </p>
+
+  <div class="tableau-wrapper">
+    <!-- Tableau embed -->
+    <div class="tableauPlaceholder" id="vizAltaSnowfall" style="position: relative">
+      <noscript>
+        <a href="#">
+          <img alt="ALTA SNOWFALL"
+               src="https://public.tableau.com/static/images/Al/AltaSnowfall/ALTASNOWFALL/1_rss.png"
+               style="border:none;">
+        </a>
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="AltaSnowfall/ALTASNOWFALL" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param name="static_image" value="https://public.tableau.com/static/images/Al/AltaSnowfall/ALTASNOWFALL/1.png" />
+        <param name="animate_transition" value="yes" />
+        <param name="display_static_image" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="display_overlay" value="yes" />
+        <param name="display_count" value="yes" />
+        <param name="language" value="en-US" />
+      </object>
+    </div>
+
+    <script type="text/javascript">
+      var divElement = document.getElementById('vizAltaSnowfall');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '1500px';
+        vizElement.style.height = '927px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '827px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+</section>
+
+
+    <!-- NAV BACK TO PROFESSIONAL PAGES -->
+    <section class="content-section back-links">
+      <h2>Back to My Main Site</h2>
+      <p>
+        This page is my scratch / practice page. You can go back to my more
+        professional pages here:
+      </p>
+      <ul>
+        <li><a href="../index.html">Home / Landing Page</a></li>
+        <li><a href="resume.html">Professional Résumé Page</a></li>
+        <li><a href="game.html">Brick Blaster Game</a></li>
+      </ul>
+
+      <p class="back-to-top">
+        <a href="#top">Back to top of the page ↑</a>
+      </p>
+    </section>
+  </main>
+
+</body>
+</html>

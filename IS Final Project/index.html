@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to My Final Project</title>
+
+  <!-- INLINE CSS SO IT DEFINITELY LOADS -->
+  <style>
+    /* Page basics */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f7ff;
+      color: #222;
+    }
+
+    .page-wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Centered header */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    /* ROW of three items */
+    .link-row {
+      display: flex;              /* put items in a row */
+      justify-content: center;    /* center the row */
+      gap: 30px;                  /* spacing between them */
+      flex-wrap: nowrap;          /* keep them on one line on large screens */
+    }
+
+    /* Individual "cards" */
+    .link-card {
+      width: 260px;
+      background: white;
+      padding: 20px 18px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .link-card a {
+      display: block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #3b2b8a;
+      margin-bottom: 8px;
+    }
+
+    .link-card a:hover {
+      text-decoration: underline;
+    }
+
+    .link-card p {
+      margin: 0;
+      font-size: 0.98rem;
+    }
+
+    /* Footer centered */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <h1>Welcome to My Final Project</h1>
+      <p>Feel free to explore all the pages that I have created!</p>
+    </header>
+
+    <main class="link-row">
+      <section class="link-card">
+        <a href="pages/resume.html">Resume Page</a>
+        <p>View my professionally styled resume.</p>
+      </section>
+
+      <section class="link-card">
+        <a href="pages/scratch.html">Scratch Page</a>
+        <p>Explore my creative custom webpage.</p>
+      </section>
+
+      <section class="link-card">
+        <a href="pages/game.html">Game Page</a>
+        <p>Play the interactive game I built.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Thanks for visiting!</p>
+    </footer>
+  </div>
+</body>
+</html>
